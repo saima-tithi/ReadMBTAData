@@ -20,11 +20,11 @@ The program can be run using the following command:
 
 Here, the program will get subway routes information from the API and will show the long names of the routes. It will also get the stop information corresponding to those routes. Then it will show total number of unique stops, the route with the most stops, the route with the fewest stops, and the stop names which are wheelchair accessible.
 
-If user wants to find routes from a source stop to a destination stop, the program needs two input parameters, `--stop1` which is the source stop and `--stop2` which is the destination stop. Here is the command:
+If user wants to find routes from a source stop to a destination stop, the program needs two input parameters, `--stop1` which is the source stop and `--stop2` which is the destination stop. The output will contain an ordered list of routes needs to be taken. The order of the routes indicates which route needs to be taken first. Here is the command for running our program with a source and destination stop:
 
 ```python read_mbta_data.py --stop1 "Alewife" --stop2 "Central"```
 
-If user wants to find routes from a source stop to a destination stop in covid19 mode, where some stops are closed (stops with a name with any word starting with C, O, V, I, or D will be closed), then `--mode` parameter needs to be set as 'covid19'. Here is the command:
+If user wants to find routes from a source stop to a destination stop in covid-19 mode, where some stops are closed (stops with a name with any word starting with C, O, V, I, or D will be closed), then `--mode` parameter needs to be set as 'covid19'. Here is the command for running our program with a source and destination stop in covid-19 mode:
 
 ```python read_mbta_data.py --stop1 "Alewife" --stop2 "Central" --mode covid19```
 
