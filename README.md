@@ -24,8 +24,7 @@ If user wants to find routes from a source stop to a destination stop, the progr
 
 ```python read_mbta_data.py --stop1 "Alewife" --stop2 "Central"```
 
-If user wants to find routes from a source stop to a destination stop in covid19 mode, where some stops are closed (stops with a name starting with C, O, V,
-I, or D will be closed), then `--mode` parameter needs to be set as 'covid19'. Here is the command:
+If user wants to find routes from a source stop to a destination stop in covid19 mode, where some stops are closed (stops with a name with any word starting with C, O, V, I, or D will be closed), then `--mode` parameter needs to be set as 'covid19'. Here is the command:
 
 ```python read_mbta_data.py --stop1 "Alewife" --stop2 "Central" --mode covid19```
 
