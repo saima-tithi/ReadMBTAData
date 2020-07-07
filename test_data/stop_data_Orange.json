@@ -1,0 +1,189 @@
+{
+    "data":[
+       {
+          "attributes":{
+             "address":"Tremont St and Winter St, Boston, MA 02108",
+             "at_street":"None",
+             "description":"None",
+             "latitude":42.356395,
+             "location_type":1,
+             "longitude":-71.062424,
+             "municipality":"Boston",
+             "name":"Park Street",
+             "on_street":"None",
+             "platform_code":"None",
+             "platform_name":"None",
+             "vehicle_type":"None",
+             "wheelchair_boarding":1
+          },
+          "id":"place-pktrm",
+          "links":{
+             "self":"/stops/place-pktrm"
+          },
+          "relationships":{
+             "child_stops":{
+ 
+             },
+             "facilities":{
+                "links":{
+                   "related":"/facilities/?filter[stop]=place-pktrm"
+                }
+             },
+             "parent_station":{
+                "data":"None"
+             },
+             "recommended_transfers":{
+ 
+             },
+             "route":{
+                "data":{
+                   "id":"Red",
+                   "type":"route"
+                }
+             },
+             "zone":{
+                "data":"None"
+             }
+          },
+          "type":"stop"
+       },
+       {
+          "attributes":{
+             "address":"Washington St and Summer St, Boston, MA",
+             "at_street":"None",
+             "description":"None",
+             "latitude":42.355518,
+             "location_type":1,
+             "longitude":-71.060225,
+             "municipality":"Boston",
+             "name":"Downtown Crossing",
+             "on_street":"None",
+             "platform_code":"None",
+             "platform_name":"None",
+             "vehicle_type":"None",
+             "wheelchair_boarding":1
+          },
+          "id":"place-dwnxg",
+          "links":{
+             "self":"/stops/place-dwnxg"
+          },
+          "relationships":{
+             "child_stops":{
+ 
+             },
+             "facilities":{
+                "links":{
+                   "related":"/facilities/?filter[stop]=place-dwnxg"
+                }
+             },
+             "parent_station":{
+                "data":"None"
+             },
+             "recommended_transfers":{
+ 
+             },
+             "route":{
+                "data":{
+                   "id":"Red",
+                   "type":"route"
+                }
+             },
+             "zone":{
+                "data":"None"
+             }
+          },
+          "type":"stop"
+       },
+       {
+          "attributes":{
+             "address":"700 Atlantic Ave, Boston, MA 02110",
+             "at_street":"None",
+             "description":"None",
+             "latitude":42.352271,
+             "location_type":1,
+             "longitude":-71.055242,
+             "municipality":"Boston",
+             "name":"South Station",
+             "on_street":"None",
+             "platform_code":"None",
+             "platform_name":"None",
+             "vehicle_type":"None",
+             "wheelchair_boarding":1
+          },
+          "id":"place-sstat",
+          "links":{
+             "self":"/stops/place-sstat"
+          },
+          "relationships":{
+             "child_stops":{
+ 
+             },
+             "facilities":{
+                "links":{
+                   "related":"/facilities/?filter[stop]=place-sstat"
+                }
+             },
+             "parent_station":{
+                "data":"None"
+             },
+             "recommended_transfers":{
+ 
+             },
+             "route":{
+                "data":{
+                   "id":"Red",
+                   "type":"route"
+                }
+             },
+             "zone":{
+                "data":{
+                   "id":"CR-zone-1A",
+                   "type":"zone"
+                }
+             }
+          },
+          "type":"stop"
+       }
+    ],
+    "included":[
+        {
+           "attributes":{
+              "color":"ED8B00",
+              "description":"Rapid Transit",
+              "direction_destinations":[
+                 "Forest Hills",
+                 "Oak Grove"
+              ],
+              "direction_names":[
+                 "South",
+                 "North"
+              ],
+              "fare_class":"Rapid Transit",
+              "long_name":"Orange Line",
+              "short_name":"",
+              "sort_order":10020,
+              "text_color":"FFFFFF",
+              "type":1
+           },
+           "id":"Orange",
+           "links":{
+              "self":"/routes/Orange"
+           },
+           "relationships":{
+              "line":{
+                 "data":{
+                    "id":"line-Orange",
+                    "type":"line"
+                 }
+              },
+              "route_patterns":{
+  
+              }
+           },
+           "type":"route"
+        }
+     ],
+    "jsonapi":{
+       "version":"1.0"
+    }
+ }
