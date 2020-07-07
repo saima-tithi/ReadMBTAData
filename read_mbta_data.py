@@ -272,9 +272,14 @@ def main():
         my_mbta_data_reader.trip_src_to_dest_stop(args.stop1, args.stop2, banned_stops)   
     elif (args.stop1 and args.stop2 and args.mode == "covid19"):
         # covid19 mode where some stops are closed
+        # any stop with a name that includes a word starting with 
+        # C, O, V, I, or D is closed.
+        banned_chars = ['C', 'O', 'V', 'I', 'D']
         for stop_name in my_mbta_data_reader.stop_set:
-            if (stop_name[0] in ['C', 'O', 'V', 'I', 'D']):
-                banned_stops.add(stop_name)
+            stop_name_words = stop_name.split()
+            for word in stop_name_words:
+                if (word[0] in banned_chars):
+                    banned_stops.add(stop_name)
         my_mbta_data_reader.trip_src_to_dest_stop(args.stop1, args.stop2, banned_stops)
 
 if __name__ == "__main__":

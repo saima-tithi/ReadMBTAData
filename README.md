@@ -1,20 +1,6 @@
 # ReadMBTAData:
 Data Reader for Boston Tranportaion System (MBTA)
 
-# Project Structure:
-The project folder structure:
-
-ReadMBTAData/
--- read_mbta_data.py
--- README.md
--- __init__.py
--- test_read_mbta_data.py
--- test_data/
-   -- routes_data.json
-   -- stop_data_Red.json
-   -- stop_data_Mattapan.json
-   -- stop_data_Orange.json
-
 # Requirements:
 This program is written in Python 3.7, so Python 3 needs to be installed in the user's machine. This program uses `requests` library for HTTP request. It can be installed using the following command:
 
